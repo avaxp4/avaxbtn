@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AvaxBtn</string>
+    <string name="accessibility_service_description">AvaxBtn Control Service</string>
+</resources>

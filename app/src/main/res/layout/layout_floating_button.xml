@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <ImageView
+        android:id="@+id/layout_collapsed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_floating_ball"
+        android:src="@drawable/ic_power_icon"
+        android:scaleType="centerInside"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_capsule"
+        android:padding="6dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:id="@+id/btn_minimize"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_minimize"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:alpha="0.7"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_power"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_power_icon"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="6dp" />
+        <View android:layout_width="20dp" android:layout_height="1dp" android:background="#22FFFFFF" android:layout_marginVertical="3dp"/>
+        <ImageView
+            android:id="@+id/btn_vol_up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_vol_plus"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="8dp" />
+        <ImageView
+            android:id="@+id/btn_vol_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_vol_minus"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="8dp" />
+        <View android:layout_width="20dp" android:layout_height="1dp" android:background="#22FFFFFF" android:layout_marginVertical="3dp"/>
+        <ImageView
+            android:id="@+id/btn_screenshot"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_screenshot"
+            android:padding="8dp"
+            android:alpha="0.8"/>
+        <View android:layout_width="20dp" android:layout_height="1dp" android:background="#22FFFFFF" android:layout_marginVertical="3dp"/>
+        <ImageView
+            android:id="@+id/drag_handle"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_drag_handle"
+            android:scaleType="centerInside" 
+            android:alpha="0.5"/>
+    </LinearLayout>
+</FrameLayout>
